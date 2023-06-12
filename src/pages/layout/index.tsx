@@ -1,5 +1,5 @@
 import { Layout } from 'antd'
-const { Header, Footer, Sider, Content } = Layout
+const { Header, Sider, Content } = Layout
 
 const App = () => (
     <Layout>
@@ -7,7 +7,6 @@ const App = () => (
         <Layout>
             <Header>Header</Header>
             <Content>Content</Content>
-            {/* <Footer>Footer</Footer> */}
         </Layout>
     </Layout>
 )
