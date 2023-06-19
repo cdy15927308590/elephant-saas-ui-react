@@ -1,9 +1,9 @@
 module.exports = {
     semi: false,
-    endOfLine: "auto",
+    endOfLine: 'auto',
     singleQuote: true,
     tabWidth: 4,
-    trailingComma: "es5",
-    // arrowParens: 'avoid',
+    trailingComma: 'es5',
+    arrowParens: 'avoid',
     bracketSpacing: true,
-};
+}

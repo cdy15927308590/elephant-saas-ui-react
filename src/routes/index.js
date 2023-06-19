@@ -2,7 +2,7 @@ import overviewRoute from './overview'
 import merchantRoute from './merchant'
 
 import Layout from '@/pages/layout'
-import Error from '@/pages/404'
+// import Error from '@/pages/404'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 export interface RouteType {
@@ -14,15 +14,16 @@ export interface RouteType {
 const routeArray: Array = [
     {
         path: '/',
-        element: <Layout />,
-        children: [...overviewRoute, ...merchantRoute],
+        element: <Layout Navigate to="overview" />,
+        children: [...overviewRoute],
     },
 ]
+console.log(routeArray)
 const CollectRouter = () => {
-    const initRoute = (routeArray) =>
-        routeArray.map((item) =>
+    const initRoute = routeArray =>
+        routeArray.map(item =>
             item.children ? (
-                item.children.map((item1) => (
+                item.children.map(item1 => (
                     <Route
                         path={item1.path}
                         key={item1.path}
