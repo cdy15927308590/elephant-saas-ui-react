@@ -13,14 +13,12 @@ const routes = [
         element: <Overviewpage />,
         label: '概览',
         icon: <MailOutlined />,
-        children: [],
     },
     {
         path: '/mallManage',
         element: <Overviewpage />,
         label: '商城管理',
         icon: <MailOutlined />,
-        children: [],
     },
     {
         path: '/financeManage',
@@ -45,7 +43,13 @@ const routes = [
         element: <Overviewpage />,
         label: '系统设置',
         icon: <MailOutlined />,
-        children: [],
+        children: [
+            {
+                path: 'financeManage',
+                element: <Overviewpage />,
+                label: 'xxxx',
+            },
+        ],
     },
 ]
 
